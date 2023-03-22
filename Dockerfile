@@ -4,7 +4,7 @@
 # FROM alpine:latest
 # CMD ["/bin/sh"]
 
-FROM amazoncorreto:11
+FROM amazoncorretto:11-alpine-jdk
 MAINTAINER Msasiuk
 COPY target/GMsasiuk-0.0.1-SNAPSHOT.jar GMsasiuk-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","/GMsasiuk-0.0.1-SNAPSHOT.jar"]
